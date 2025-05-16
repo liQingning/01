@@ -103,14 +103,14 @@
 .tab-content-left>div:last-child{
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 40px; 
 }
 .tab-content-left>div:last-child>div{
   height: 40px;
   width: 100px;
   border: 2px solid rgb(0, 0, 0);
   border-radius: 8px;
-
+  cursor: pointer;
 }
 .tab-content-left>div:last-child>div:first-child{
   display: flex;
