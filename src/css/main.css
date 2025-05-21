@@ -5,6 +5,7 @@
 body{
   display:flex;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .continer{
@@ -29,10 +30,13 @@ body{
 .part-title>span:first-child{
   font-size: 1.1rem;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.568);
+  color: rgb(121, 121, 121);
 }
 .part-title>span:last-child{
   font-size: 2.8rem;
   font-weight: 500;
   letter-spacing: 1px;
+}
+.turnright{
+  cursor: pointer;
 }

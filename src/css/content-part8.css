@@ -1,0 +1,130 @@
+.content-part8{
+  width: 100%;
+  height: 1400px;
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--main-block-padding);
+  gap: 20px;
+}
+.content-part8-main{
+  background: #000;
+  color: white;
+  padding: 60px 100px;
+  border-radius: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.part8-grid{
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 0.8fr;
+  grid-template-rows: 0.3fr repeat(5,1fr);
+}
+.part8-grid-item{
+  grid-row: 1/2;
+  grid-column: span 6;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  position: relative;
+  color: rgb(185, 185, 185);
+}
+.part8-grid-item>div:last-child{
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+}
+.part8-grid-item::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 4px,
+    rgb(67, 67, 67) 4px,
+    rgb(67, 67, 67) 8px
+  );
+  bottom: 0;
+}
+.line2{
+  grid-row: 2/3;
+}
+.name-item{
+  display: flex;
+  align-items: center;
+  gap: 10px ;
+}
+.name-item>div:last-child{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.name-item>div:last-child>span:first-child{
+  font-size: 1.2rem;
+  
+}
+.name-item>div:last-child>span:last-child{
+  font-size: 0.8rem;
+  color: rgb(75, 75, 75);
+}
+.name-item>div:last-child>span:last-child>span:last-child{
+  color: rgb(156, 156, 156);
+}
+.name-item>div:first-child{
+  width: 80px;
+  height: 50px;
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 0;
+}
+.name-item>div:first-child>img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.total-item{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  justify-self: self-end;
+  justify-content: center;
+  align-items: center;
+}
+.total-item>span:first-child{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+.total-item>span:last-child{
+  color: rgb(75, 75, 75);
+  font-size: 0.8rem;
+}
+.line3{
+  grid-row: 3/4;
+}
+.line4{
+  grid-row: 4/5;
+}
+.line5{
+  grid-row: 5/6;
+}
+.line6{
+  grid-row: 6/7;
+}
+.part8-grid-item>:nth-child(2){
+  justify-self: center;
+}
+.part8-grid-item>:nth-child(3){
+  justify-self: center;
+}
+.part8-grid-item>:nth-child(4){
+  justify-self: center;
+}
