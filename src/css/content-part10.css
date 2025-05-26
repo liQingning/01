@@ -1,0 +1,231 @@
+.content-part10{
+  width: 100%;
+  height: auto;
+  gap: 50px;
+  padding-block: var(--main-block-padding);
+  display: flex;
+  flex-direction: column;
+  background: #f3f3f3;
+}
+
+.content-part10-top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.content-part10-top>span:last-of-type{
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.coupon-box{
+  display: flex;  
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.35);
+}
+.coupon-box>input{
+  width: 400px;
+  height: 46px;
+  border: none;
+  outline: none;
+  padding-left: 0.8rem;
+}
+.coupon-box>input::placeholder{
+  color: rgb(143, 143, 143);
+
+  font-size: 0.6rem;
+}
+.coupon-box>button{
+  padding: 0 20px;
+  color: white;
+  font-size: 0.6rem;
+  background: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.content-part10-bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.content-part10-bottom-top{
+  display: flex;
+  align-items: center;
+}
+.toggle-price-box{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+#toggle-price {
+  display: none;
+}
+.toggle-price-box>label{
+  width: 68px;
+  height: 36px;
+  background-color: #ffffff;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.toggle-price-box>label::after{
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  transition:  0.3s ease-in-out;
+}
+#toggle-price:checked +.content-part10-bottom-top label::after{
+  transform: translateX(32px);
+}
+
+.toggle-price-box>span:last-of-type{
+  text-wrap: nowrap;
+  font-size: 0.8rem;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: linear-gradient(90deg,rgba(255, 151, 151, 0.87),rgba(168, 229, 254, 0.788));
+}
+
+.content-part10-bottom-bottom{
+  display: flex;
+  gap: 50px;
+}
+.content-part10-bottom-bottom>div{
+  width: 100%;
+  height:600px;
+  position: relative;
+}
+.part10-card{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  justify-content: space-between;
+  gap: 40px;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.part10-card:hover{
+  background: #000;
+  color: white;
+  transform: translateY(-10px);
+}
+.part10-card:hover .save{
+  background: linear-gradient(90deg,rgba(255, 151, 151, 0.87),rgba(168, 229, 254, 0.788));
+  color: #000;
+}
+.part10-card-title{
+  position: absolute;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: -30px;
+}
+.part10-card-price{
+  position: absolute;
+  top: 120px;
+}
+.part10-card-price-title>span:first-child{
+  font-size: 4rem;
+}
+.part10-card-price-title>span:last-child{
+  font-size: 1.3rem;
+}
+.part10-card-button{
+  position: absolute;
+  top: 260px;
+  width: 80%;
+  height: 60px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+.part10-card-list{
+  position: absolute;
+  top: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.part10-card-list-item{
+  display: flex;
+  gap: 20px;
+  font-size: 0.8rem;
+  align-items: center;
+}
+.part10-card-list-item>div:first-child{
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  padding: 2px;
+  border: 1px solid rgba(128, 128, 128, 0.495);
+  border-radius: 50%;
+}
+.part10-card-price-title>span:first-child{
+  position: relative;
+}
+.dollar{
+  font-size: 0.8rem;
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  font-weight: bold;
+}
+.dollar2{
+  font-size: 0.8rem;
+  position: absolute;
+  top: 15px;
+  left: 138px;
+  font-weight: bold;
+}
+.part10-card-price-info{
+  display: flex;
+  gap: 10px;
+}
+.save{
+  text-wrap: nowrap;
+  font-size: 0.8rem;
+  padding: 4px 6px;
+  border-radius: 4px;
+  background: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.year-price{
+  display: none;
+  font-size: 4rem;
+}
+.year-total-price{
+  display: none;
+  
+}
+#toggle-price:checked ~ .content-part10-bottom-bottom .mouthly-price{
+  display: none;
+}
+#toggle-price:checked ~ .content-part10-bottom-bottom .year-price{
+  display: inline-block;
+}
+#toggle-price:checked ~ .content-part10-bottom-bottom .mouthly-total-price{
+  display: none;
+}
+#toggle-price:checked ~ .content-part10-bottom-bottom .year-total-price{
+  display: inline-block;
+}
