@@ -1,0 +1,109 @@
+.content-part11{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: var(--main-block-padding);
+  gap: 40px;
+  background: #f3f3f3;
+}
+
+.content-part11-main >div:first-child{
+  
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  position: relative;
+}
+.content-part11-main >div:first-child::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 4px,
+    rgb(67, 67, 67) 4px,
+    rgb(67, 67, 67) 8px
+  );
+  bottom: 0;
+}
+.content-part11-box{
+  display: flex;
+  flex-direction: column;
+}
+.content-part11-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 0px;
+  position: relative;
+}.content-part11-item::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 4px,
+    rgb(67, 67, 67) 4px,
+    rgb(67, 67, 67) 8px
+  );
+  bottom: 0;
+}
+.content-part11-item::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  background: repeating-linear-gradient(
+    to right,
+    transparent,
+    transparent 4px,
+    rgb(67, 67, 67) 4px,
+    rgb(67, 67, 67) 8px
+  );
+  bottom: 0;
+}
+.content-part11-item>div:first-child{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.content-part11-item>div:first-child>span:first-child{
+  font-weight: bold;
+  background: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.content-part11-item-text{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.content-part11-item-text>span:first-child{
+  font-weight: bold;
+  font-size: 1rem;
+}
+.content-part11-item-text>span:last-child{
+  font-size: 0.8rem;
+  color: #666;
+}
+.content-part11-item>span:last-child{
+  font-weight: bold;
+  color: #000000;
+  padding: 10px 12px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+}
