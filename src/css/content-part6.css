@@ -26,6 +26,7 @@
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
+  transition: all 0.3s ease;
 }
 .part6-main-content-cards-one>div:first-child{
   width: 100%;
@@ -143,4 +144,8 @@
 }
 .turnright{
   cursor: pointer;
+}
+
+.part6-main-content-cards-one:hover{
+  transform: translateY(-10px);
 }

@@ -88,6 +88,7 @@
   align-items: center;
   padding: 12px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .part4-main-continer-text2>div{
   display: flex;
@@ -111,7 +112,19 @@
 .part4-main-continer-text2>div>div:nth-child(2)>span:last-child {
   font-size: 0.8rem;
 }
-
+.part4-main-continer-text2>div>div:last-child{
+  display: flex;
+  position: relative;
+}
+.part4-main-continer-text2>div>div:last-child >dotlottie-player:first-child{
+  
+  
+  opacity: 0;
+}
+.part4-main-continer-text2>div>div:last-child >dotlottie-player:last-child{
+  position: absolute;
+  
+}
 .part4-main-continer-bottom{
   display: flex;
   gap: 20px;
@@ -173,4 +186,18 @@ img.right-card{
 }
 .part4-main-continer-bottom-logo.right-card>div:nth-child(3){
   background-image: url(../images/part4/small/avatars/person3.png);
+}
+
+.part4-main-continer-card:hover .part4-main-continer-text2{
+  background: #000;
+  color: white;
+}
+.part4-main-continer-card:hover .part4-main-continer-text2>div>div:first-child{
+  border: 1px solid rgb(186, 186, 186);
+}
+.part4-main-continer-card:hover .part4-main-continer-text2>div>div:last-child >dotlottie-player:first-child{
+  opacity: 1;
+}
+.part4-main-continer-card:hover .part4-main-continer-text2>div>div:last-child >dotlottie-player:last-child{
+  opacity: 0;
 }

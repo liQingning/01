@@ -89,7 +89,11 @@
   color: white;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: all 0.3s ease;
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.279);
+}
+.content-part1-left-other >div:first-child:hover{
+  letter-spacing: 3px;
 }
 .lottie-icon {
   width: 40px;

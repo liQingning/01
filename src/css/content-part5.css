@@ -54,21 +54,32 @@
   flex-direction: column;
   padding: 30px;
   height: 110%;
-  
+  overflow: hidden;
+  transition: all 0.3s ease;
   justify-content: space-between;
+  border-radius: 10px;
 }
 .content-part5-grid-item-last>.part5-bg{
-  background-image: url(../images/part5/office.jpg);
-  filter: grayscale(100%) brightness(70%) contrast(120%);
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
   top: 0;
   left: 0;
-  border-radius: 10px;
+  
+}
+.content-part5-grid-item-last>.part5-bg>.bg-img{
+  background-image: url(../images/part5/office.jpg);
+  filter: grayscale(100%) brightness(70%) contrast(120%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  position: absolute;border-radius: 10px;
 }
 .content-part5-grid-item-last>div:nth-child(2){
   display: flex;
@@ -89,4 +100,15 @@
   align-self: flex-start;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.content-part5-grid-item-last:hover .part5-bg>.bg-img{
+  width: 110%;
+  height: 110%;
+}
+.content-part5-grid-item-last>span:last-child:hover{
+  background: white;
+  color: black;
+  opacity: 1;
 }

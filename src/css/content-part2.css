@@ -12,13 +12,15 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  transition: all 0.3s ease-in-out;
 }
 .content-part2-bottom>div:first-child{
   height: 500px;
   width: 25%;
+  transition: all 0.3s ease-in-out;
 }
 .content-part2-bottom>div:last-child{
-
+  transition: all 0.3s ease-in-out;
   width: 70%;
 }
 .content-part2-bottom>div:first-child{
@@ -34,6 +36,7 @@
 .content-part2-bottom >div:first-child>img{
   width: 140%;
   order: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .content-part2-bottom>div:first-child>span:first-of-type{
@@ -70,8 +73,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  position: relative;
 }
 .part2-card-item>div:first-child{
+  
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -104,4 +109,14 @@
   border-radius: 8px;
   margin-top: 10px;
   cursor: pointer;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+.content-part2-bottom:hover >div:first-child>img{
+  width: 150%;
+
+}
+.part2-card-item>:last-child:hover{
+  width: 56px;
+  height: 50px;
 }
