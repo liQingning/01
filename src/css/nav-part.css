@@ -230,7 +230,7 @@ div.nav-items-container.nav-items-container >span{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  transition: all 0.3s ease;
 }
 .mobile-buttons >div:first-child{
   background: #000;
@@ -239,6 +239,7 @@ div.nav-items-container.nav-items-container >span{
   padding: 10px 20px;
   border-radius: 10px;
   margin-bottom: 10px;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .mobile-buttons >div:last-child{
@@ -246,6 +247,7 @@ div.nav-items-container.nav-items-container >span{
   padding: 10px 20px;
   border-radius: 10px;
   margin-bottom: 5px;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 .mobile-sub-nav-card{
@@ -257,24 +259,33 @@ div.nav-items-container.nav-items-container >span{
 }
 .mobile-sub-nav-card-item{
   display: flex;
-  
+  transition: all 0.3s ease;
   align-items: center;
   gap: 10px;
 }
-.mobile-sub-nav-card-item>div{
+.mobile-sub-nav-card-item>div:first-child{
   width: 18px;
   height: 18px;
   display: flex;
   gap: 10px;
+  transition: all 0.3s ease;
 }
-.mobile-sub-nav-card-item>span{
+.mobile-sub-nav-card-item>div:last-child{
+  display: flex;
+  justify-content: start;
+  align-items:center;
+  gap: 10px;
+}
+.mobile-sub-nav-card-item>div:last-child>span:first-child{
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 400;
+  transition: all 0.3s ease;
 }
-.mobile-sub-nav-card-item>span:last-child{
+.mobile-sub-nav-card-item>div:last-child>span:last-child{
   color: #626262;
   font-size: 0.6rem;
   font-weight: normal;
+  transition: all 0.3s ease;
 }
 @media  screen and (max-width:1090px) {
   .nav-items-container.nav-items-container.nav-items-container{
@@ -288,4 +299,37 @@ div.nav-items-container.nav-items-container >span{
     justify-content: center;
     justify-content: center;
   }
+}
+@media  screen and (max-width:780px) {
+  .mobile-container{
+    font-size: 1rem;
+  }
+  .mobile-sub-nav-card-item>span{
+    font-size: 0.7rem;
+  }
+  .mobile-sub-nav-card-item>span:last-child{
+    font-size: 0.5rem;
+  }
+  .mobile-buttons >div:first-child{
+    font-size: 0.7rem;
+    padding: 7px 14px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+  }
+  .mobile-buttons >div:last-child{
+    font-size: 0.7rem;
+  }
+  .mobile-sub-icon{
+    width: 12px;
+  }
+}
+@media  screen and (max-width:300px){
+  .mobile-sub-nav-card-item>div:last-child{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
+  #mobile-item1:checked ~div{
+  height: 130px;
+}
 }

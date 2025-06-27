@@ -1,16 +1,21 @@
 :root{
-  --main-block-padding:100px
+  --main-block-padding:min(100px,4vw)
 }
 
+html{
+  overflow-x: hidden;
+}
 body{
   display:flex;
   justify-content: center;
+  width: 100vw;
   overflow-x: hidden;
 }
 
 .continer{
   width: 100%;
-  max-width: 1400px;
+  max-width: 1280px;
+  
 }
 
 
